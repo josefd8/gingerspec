@@ -69,5 +69,9 @@ jobs:
         java-version: ${{ matrix.java }}
         distribution: 'temurin'
         cache: maven
+    - name: Set up Maven
+      uses: stCarolas/setup-maven@v5
+      with:
+        maven-version: 3.8.2
     - name: Building with Maven
       run: mvn clean install -DVERSION=1.0 -DSLEEPTEST=3 -DAGENT_LIST=1,2 -DVARNAME=foo -DWAIT=1 -DPOSTGRES_HOST=localhost -DMYSQL_HOST=localhost -DCLICKHOUSE_HOST=localhost -DREST_SERVER_HOST=localhost -DGRAPHQL_SERVER_HOST=localhost -DDEMO_SITE_HOST=demo-site:4567 -DSELENIUM_GRID=http://localhost:4444/wd/hub -DZOOKEEPER_HOST=localhost -DSCHEMA_REGISTRY_HOST=localhost
