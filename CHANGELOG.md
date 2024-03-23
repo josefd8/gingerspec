@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.17
+
+* bonigarcia library was updated because is not correctly retrieving the correct webdriver for chrome
+
+* Changes in the github actions scripts to allow gingerspec to be deployed from a new repository (will no longer be veepee-os)
+
 ## 2.2.16
 
 * Add GraphQL request validator
