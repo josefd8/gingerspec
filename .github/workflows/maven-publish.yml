@@ -14,14 +14,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Setting up Java 11
+    - name: Set upJava 11 with Apache Maven Central
       uses: actions/setup-java@v3
-      with:
+      with: # running setup-java again overwrites the settings.xml
         java-version: 11
         distribution: 'temurin'
         cache: maven
         server-id: ossrh # Value of the distributionManagement/repository/id field of the pom.xml
-        settings-path: ${{ github.workspace }} # location for the settings.xml file
+        server-username: ${{ secrets.MAVEN_USERNAME }} # env variable for username in deploy
+        server-password: ${{ secrets.MAVEN_CENTRAL_TOKEN }} # env variable for token in deploy
+        gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }} # Value of the GPG private key to import
+        gpg-passphrase: ${{ secrets.MAVEN_GPG_PASSPHRASE }} # env variable for GPG private key passphrase
         
     - name: Set up Maven
       uses: stCarolas/setup-maven@v5
@@ -31,21 +34,10 @@ jobs:
     - name: Build with Maven
       run: mvn clean package -Dmaven.test.skip=true
 
-    - name: Set up Apache Maven Central
-      uses: actions/setup-java@v3
-      with: # running setup-java again overwrites the settings.xml
-        java-version: 11
-        distribution: 'temurin'
-        server-id: ossrh # Value of the distributionManagement/repository/id field of the pom.xml
-        server-username: ${{ secrets.MAVEN_USERNAME }} # env variable for username in deploy
-        server-password: ${{ secrets.MAVEN_CENTRAL_TOKEN }} # env variable for token in deploy
-        gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }} # Value of the GPG private key to import
-        gpg-passphrase: ${{ secrets.MAVEN_GPG_PASSPHRASE }} # env variable for GPG private key passphrase
-
     - name: Publish to Apache Maven Central
       run: mvn clean deploy -P sign,build-extras -Dmaven.test.skip=true
       env:
-        MAVEN_USERNAME: jose.fernandez
+        MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
         MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
         MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
 
