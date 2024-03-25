@@ -23,13 +23,17 @@ jobs:
         server-id: ossrh
         server-username: MAVEN_USERNAME
         server-password: MAVEN_CENTRAL_TOKEN
-        gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }}
         gpg-passphrase: MAVEN_GPG_PASSPHRASE
         
     - name: Set up Maven
       uses: stCarolas/setup-maven@v5
       with:
         maven-version: 3.8.2
+
+    - name: Install gpg secret key
+      run: |
+        # Install gpg secret key
+        cat <(echo -e "${{ secrets.MAVEN_GPG_PRIVATE_KEY }}") | gpg --batch --import
 
     - name: Publish to Apache Maven Central
       run: mvn clean deploy -P sign,build-extras -Dmaven.test.skip=true
