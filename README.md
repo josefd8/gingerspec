@@ -43,7 +43,7 @@ GingerSpec provides common functionality that can be reused by different test pr
 <br>
 
 <div align="center">
-  <img src="https://github.com/veepee-oss/gingerspec/wiki/resources/gingerspec_highlights.png" alt="GingerSpec Highlights">
+  <img src="https://github.com/josefd8/gingerspec/wiki/resources/gingerspec_highlights.png" alt="GingerSpec Highlights">
 </div>
 
 ## Documentation
@@ -91,7 +91,7 @@ This will create a ready-to-use project based on a template with best practices 
 As part of GingerSpec implementation, there are a couple of tags which may be useful for your scenarios:  
 
 ### :envelope: Slack integration: 
-Send a message to a Slack channel(s) when your scenario fails. [Read more](https://github.com/veepee-oss/gingerspec/wiki/Gherkin-tags#slack-tag).
+Send a message to a Slack channel(s) when your scenario fails. [Read more](https://github.com/josefd8/gingerspec/wiki/Gherkin-tags#slack-tag).
 
 ```gherkin
 @slack[#mychannel]
@@ -102,7 +102,7 @@ Send a message to a Slack channel(s) when your scenario fails. [Read more](https
 ```
 
 ### :bar_chart: Jira integration
-Update tickets in jira based onn tests results and perform conditional execution based on status of tickets. [Read more](https://github.com/veepee-oss/gingerspec/wiki/Gherkin-tags#jira-tag).
+Update tickets in jira based onn tests results and perform conditional execution based on status of tickets. [Read more](https://github.com/josefd8/gingerspec/wiki/Gherkin-tags#jira-tag).
 
 ```gherkin
 @jira[QMS-990]
@@ -113,7 +113,7 @@ Scenario: A new element is inserted via a POST call
 ```
 
 ### :no_entry: Ignore scenarios
-Easily ignore scenarios using the @ignore tag. [Read more](https://github.com/veepee-oss/gingerspec/wiki/Gherkin-tags#ignore-tag).
+Easily ignore scenarios using the @ignore tag. [Read more](https://github.com/josefd8/gingerspec/wiki/Gherkin-tags#ignore-tag).
 
 ```gherkin
   @ignore @toocomplex
@@ -123,7 +123,7 @@ Easily ignore scenarios using the @ignore tag. [Read more](https://github.com/ve
 ```
 
 ### :gear: Use and create variables
-Use annd create variables directly in feature files. [Read more](https://github.com/veepee-oss/gingerspec/wiki/Gherkin-variables).
+Use annd create variables directly in feature files. [Read more](https://github.com/josefd8/gingerspec/wiki/Gherkin-variables).
 
 ````gherkin
   Scenario: A new element is inserted via a POST call
@@ -135,7 +135,7 @@ Use annd create variables directly in feature files. [Read more](https://github.
 ````
 
 ### :arrows_counterclockwise: Conditional execution
-Allow the conditional execution of scenarios based on a given environment variable. [Read more](https://github.com/veepee-oss/gingerspec/wiki/Gherkin-tags#runonenv-tag).
+Allow the conditional execution of scenarios based on a given environment variable. [Read more](https://github.com/josefd8/gingerspec/wiki/Gherkin-tags#runonenv-tag).
 
 ```gherkin
 @runOnEnv(SECS)
@@ -147,14 +147,14 @@ Scenario: Dummy scenario
     And I wait '${SECS}' seconds
 ```
 
-And [many others more!](https://github.com/veepee-oss/gingerspec/wiki/Gherkin-tags) :yum:
+And [many others more!](https://github.com/josefd8/gingerspec/wiki/Gherkin-tags) :yum:
   
 ## Steps
 
 GingerSpec contains tons of predefined Gherkin steps ready to use in your own features. The steps cover a wide range of functionality, from steps for testing Rest endpoints, perform front-end etsting using selenium, and even for testing kafka services!
 
 
-_[Testing Rest services](https://veepee-oss.github.io/gingerspec/steps-for-testing-rEST-aPIs.html)_
+_[Testing Rest services](https://josefd8.github.io/gingerspec/steps-for-testing-rEST-aPIs.html)_
 ```
   Scenario: A successful response with a valid body is returned
     Given I securely send requests to 'jsonplaceholder.typicode.com:443'
@@ -177,7 +177,7 @@ _[Testing Rest services](https://veepee-oss.github.io/gingerspec/steps-for-testi
 ```
 
 
-_[Testing a web page](https://veepee-oss.github.io/gingerspec/steps-for-testing-web-pages.html)_
+_[Testing a web page](https://josefd8.github.io/gingerspec/steps-for-testing-web-pages.html)_
 ```
   @web
   Scenario: Fill the form and click the submit button
@@ -190,7 +190,7 @@ _[Testing a web page](https://veepee-oss.github.io/gingerspec/steps-for-testing-
     Then at least '1' elements exists with 'id:output'
 ```
 
-_[Testing database](https://veepee-oss.github.io/gingerspec/steps-for-testing-relational-databases.html)_
+_[Testing database](https://josefd8.github.io/gingerspec/steps-for-testing-relational-databases.html)_
 ```
   Scenario: Executing SELECT statements on a MySQL database
     Given I connect with JDBC to database 'mysql' type 'mysql' on host '${MYSQL_HOST}' and port '3306' with user 'root' and password 'mysql'
@@ -214,7 +214,7 @@ _[Testing database](https://veepee-oss.github.io/gingerspec/steps-for-testing-re
 ```
   
 
-[And many many more!](https://veepee-oss.github.io/gingerspec/index.html)  
+[And many many more!](https://josefd8.github.io/gingerspec/index.html)  
 
   
 ## Contributing Members to GingerSpec
