@@ -631,7 +631,7 @@
             <id>sign</id>
             <build>
                 <plugins>
-<!--                     <plugin>
+                    <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
                         <version>3.2.1</version>
@@ -651,7 +651,7 @@
                                 </configuration>
                             </execution>
                         </executions>
-                    </plugin> -->
+                    </plugin>
                 </plugins>
             </build>
         </profile>
