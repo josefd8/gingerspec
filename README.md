@@ -15,11 +15,11 @@
                          \______/                               |__/                          
 
 ```
-[![GingerSpec pipeline](https://github.com/veepee-oss/gingerspec/actions/workflows/maven-build.yml/badge.svg)](https://github.com/veepee-oss/gingerspec/actions/workflows/maven-build.yml)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.privaliatech/gingerspec/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.privaliatech/gingerspec)
+[![GingerSpec pipeline](https://github.com/josefd8/gingerspec/actions/workflows/maven-build.yml/badge.svg)](https://github.com/josefd8/gingerspec/actions/workflows/maven-build.yml)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.josefd8/gingerspec/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.josefd8/gingerspec)
 [![License](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-![GitHub Release Date](https://img.shields.io/github/release-date/veepee-oss/gingerspec)
-[![javadoc](https://javadoc.io/badge2/com.github.privaliatech/gingerspec/javadoc.svg)](https://javadoc.io/doc/com.github.privaliatech/gingerspec)
+![GitHub Release Date](https://img.shields.io/github/release-date/josefd8/gingerspec)
+[![javadoc](https://javadoc.io/badge2/com.github.josefd8/gingerspec/javadoc.svg)](https://javadoc.io/doc/com.github.josefd8/gingerspec)
 </div>
 
 <div align="center"><h2>Acceptance Test library. General purpose automation framework.</h2></div>
@@ -47,9 +47,9 @@ GingerSpec provides common functionality that can be reused by different test pr
 </div>
 
 ## Documentation
-* [Project wiki](https://github.com/veepee-oss/gingerspec/wiki)
-* [Steps documentation an examples](https://veepee-oss.github.io/gingerspec/)
-* [Javadoc](https://javadoc.io/doc/com.github.privaliatech/gingerspec/latest/index.html)  
+* [Project wiki](https://github.com/josefd8/gingerspec/wiki)
+* [Steps documentation an examples](https://josefd8.github.io/gingerspec/)
+* [Javadoc](https://javadoc.io/doc/com.github.josefd8/gingerspec/latest/index.html)  
 
 ### Requirements
 * Java 8+
