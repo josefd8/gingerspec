@@ -50,7 +50,7 @@
 
 ## 2.2.13
 
-* Created a new formatter capable of transforming the feature files into a html document. This is for auto-generating the documentation that will be published in GitHub pages (https://veepee-oss.github.io/gingerspec/index.html)
+* Created a new formatter capable of transforming the feature files into a html document. This is for auto-generating the documentation that will be published in GitHub pages (https://josefd8.github.io/gingerspec/index.html)
 
 * Some unnecessary features and runner classes were removed, general code-cleanup
 

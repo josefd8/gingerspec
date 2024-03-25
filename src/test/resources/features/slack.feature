@@ -5,7 +5,7 @@ Feature: Slack Integration
   The message will contain the name of the scenario that failed as well as the feature file where it is
   located. You can fully configure the behavior of this tag using the configuration file located
   at src/test/resources/slack.properties
-  More information here: https://github.com/veepee-oss/gingerspec/wiki/Gherkin-tags#slack-tag
+  More information here: https://github.com/josefd8/gingerspec/wiki/Gherkin-tags#slack-tag
 
   Rule: Getting slack notifications
 

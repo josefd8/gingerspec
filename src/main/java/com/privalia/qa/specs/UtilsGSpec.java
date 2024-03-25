@@ -617,7 +617,7 @@ public class UtilsGSpec extends BaseGSpec {
      *          """
      * }
      * </pre>
-     * @see <a href="https://github.com/veepee-oss/gingerspec/wiki/Gherkin-tags#slack-tag">@slack tag</a>
+     * @see <a href="https://github.com/josefd8/gingerspec/wiki/Gherkin-tags#slack-tag">@slack tag</a>
      * @param slackChannel          Name of the channel to send the notification to. It can also be a list of channels separated by comma (i.e #channel1,#channel2,#channel3)
      * @param message               Message to send. It can contain variables created during the scenario
      * @throws SlackApiException    SlackApiException

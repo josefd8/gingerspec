@@ -36,7 +36,7 @@
 </div>
 
     <footer>
-        <em>Automatically generated documentation for <a href="https://github.com/veepee-oss/gingerspec">GingerSpec library</a>.</em>
+        <em>Automatically generated documentation for <a href="https://github.com/josefd8/gingerspec">GingerSpec library</a>.</em>
     </footer>
 
 </body>

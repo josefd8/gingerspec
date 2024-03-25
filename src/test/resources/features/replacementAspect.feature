@@ -7,7 +7,7 @@ Feature: Using variables
 
   There are many ways of creating new variables: you can pass variables via the CLI using -DvariableName=variableValue,
   or they can be defined in a previous step. You can also use variables to automatically generate fake data. Please, read
-  the full documentation here: https://github.com/veepee-oss/gingerspec/wiki/Gherkin-variables
+  the full documentation here: https://github.com/josefd8/gingerspec/wiki/Gherkin-variables
 
   Rule: Using variables in Scenario names, titles, log messages, datatables, docStrings
 
