@@ -38,7 +38,7 @@
 ## Project Intro/Objective
 The purpose of this project is to provide a generic BDT (behaviour driven testing) library with common BDD steps and extended gherkin language.
 
-GingerSpec provides common functionality that can be reused by different test projects, It encourages code reusability, as we test (in most of the cases) the same, it will help our QA Community to get our objectives much faster. It focuses on the reuse of actions (also steps or key tabs) that implement low level functionality and that can be organized to create much more complex features.
+GingerSpec provides common functionality that can be reused by different test projects, It encourages code re-usability, as we test (in most of the cases) the same, it will help our QA Community to get our objectives much faster. It focuses on the reuse of actions (also steps or key tabs) that implement low level functionality and that can be organized to create much more complex features.
 
 <br>
 
@@ -72,13 +72,13 @@ GingerSpec provides common functionality that can be reused by different test pr
 
 ## Using GingerSpec
 
-We **strongly** suggest to make use of the special archetype for GingerSpec based projects: [gingerspec-starter](https://github.com/PrivaliaTech/gingerspec-starter). Just run the following command in your terminal (replace the values for groupId, version and artifactId as needed):
+We **strongly** suggest to make use of the special archetype for GingerSpec based projects: [gingerspec-starter](https://github.com/josefd8/gingerspec-starter). Just run the following command in your terminal (replace the values for groupId, version and artifactId as needed):
 
 ``` 
 mvn archetype:generate \
-  -DarchetypeGroupId=com.github.privaliatech \
+  -DarchetypeGroupId=com.github.josefd8 \
   -DarchetypeArtifactId=gingerspec-starter \
-  -DgroupId=eu.vptech \
+  -DgroupId=com.mydomain \
   -Dversion=1.0-SNAPSHOT \
   -DartifactId=myproject
 ``` 
