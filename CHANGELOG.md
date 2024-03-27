@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.18
+
+* webdrivermanager dependency was not correctly updated in 2.2.17, so this release includes that fix. It was not detected during the pipeline execution because a fixed version of chrome is used there
+
 ## 2.2.17
 
 * bonigarcia library was updated because is not correctly retrieving the correct webdriver for chrome
